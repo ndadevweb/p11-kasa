@@ -4,7 +4,7 @@
   --background-default: #FFF;
   --background-footer: #000;
 
-  --page-width-default: 1440px;
+  --page-width-default: 1240px;
 
   --font-default: 'Montserrat', sans-serif;
 
@@ -16,6 +16,7 @@
 }
 
 html, body {
+  min-height: 100vh;
   margin: 0;
   padding: 0;
 }
@@ -25,15 +26,34 @@ body {
   font-family: var(--font-default);
 }
 
+h3, p {
+  margin: 0;
+}
+
 ul {
   list-style: none;
 }
+
+main {
+  margin-bottom: 100px;
+}
+
+/* Container app */
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+/* Helpers */
 
 .container {
   display: flex;
   flex-direction: column;
   /* justify-content: space-between; */
   max-width: var(--page-width-default);
+  width: 100%;
   margin: 0 auto;
   background: var(--background-default);
 }

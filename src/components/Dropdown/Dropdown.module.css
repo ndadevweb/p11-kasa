@@ -1,0 +1,50 @@
+.dropdown {
+  margin-bottom: 31px;
+  margin-left: 100px;
+  margin-right: 100px;
+  border-radius: 5px;
+  background: #F7F7F7;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  height: 47px;
+  padding: 0 32px 0 18px;
+  border-radius: inherit;
+  background: #FF6060;
+  color: #FFF;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.buttonChangeStatus {
+  border: 0px;
+  background: inherit;
+  cursor: pointer;
+}
+
+.buttonChangeStatus img.open {
+  transform: rotate(0deg);
+}
+
+.buttonChangeStatus img.close {
+  transform: rotate(-180deg);
+}
+
+.content {
+  padding: 30px 18px 18px;
+  border-radius: inherit;
+  color: #FF6060;
+}
+
+.open .content {
+  display: block;
+}
+
+.close .content {
+  display: none;
+}
