@@ -1,0 +1,24 @@
+.navigationPrimary {
+  min-width: 310px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 34px;
+}
+
+.navigationPrimary > ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.navigationPrimary li:not(:first-child) a {
+  margin-left: 60px;
+}
+
+.navigationPrimary a {
+  color: var(--color-one);
+  text-decoration: none;
+}
+
+.navigationPrimary a.active {
+  text-decoration: underline;
+}
