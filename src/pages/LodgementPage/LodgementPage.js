@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams, Navigate } from 'react-router-dom'
 import { useFindLodgement } from '../../hooks/useFindLodgement'
 import { Slideshow, Host, Rating, Tags, Dropdown } from '../../components'
 import {
@@ -18,8 +18,9 @@ export default function LodgementPage() {
   }, [lodgement])
 
   return (
-      isLoading === true
-      ? 'Loading'
+    error !== null
+      ? <Navigate to="/error" replace="true" />
+      : isLoading === true ? 'Loading'
       : (<>
           <Slideshow pictures={ lodgement.pictures } />
 
