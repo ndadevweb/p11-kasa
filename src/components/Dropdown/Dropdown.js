@@ -7,15 +7,21 @@ export const STATUS = {
   close: 'close'
 }
 
-export default function Dropdown({ defaultStatus, title, children }) {
+export const OPTION_STYLE = {
+  thin: 'thin',
+  large: 'large'
+}
+
+export default function Dropdown({ defaultStatus, title, optionStyle, children }) {
   const [ status, setStatus ] = useState(defaultStatus || STATUS.close)
+  const optionStyleDefault = optionStyle || OPTION_STYLE.thin
 
   function handleClick() {
     setStatus(status === STATUS.open ? STATUS.close : STATUS.open)
   }
 
   return (
-    <section className={ `${ classes.dropdown + ' ' + classes[status] }` }>
+    <section className={ `${ classes.dropdown + ' ' + classes[status] + ' ' + classes[optionStyleDefault]}` }>
       <h3 className={ classes.title }>
         { title }
         <button type="button" onClick={ handleClick } className={ classes.buttonChangeStatus }>

@@ -1,0 +1,51 @@
+.informations {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, min-content);
+  padding-top: 30px;
+}
+
+.mainTitle {
+  color: var(--color-one);
+  font-family: var(--font-default);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 142.6%;
+}
+
+.locationTitle {
+  color: var(--color-one);
+  font-family: var(--font-default);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.6%;
+}
+
+.header {
+  grid-column: 1 / 3;
+}
+
+.complementary {
+  grid-column: 3;
+  grid-row: 1 / 3;
+  display: flex;
+  flex-direction: column;
+}
+
+.details {
+  display: flex;
+  flex-direction: row;
+  gap: 75px;
+  grid-column: 1 / 4;
+}
+
+.details > div {
+  width: 50%;
+  margin: 0;
+}
+
+.details > div > * {
+  margin: 0;
+}

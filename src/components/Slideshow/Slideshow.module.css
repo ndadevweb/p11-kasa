@@ -5,6 +5,7 @@
 .slideshow {
   position: relative;
   width: 100%;
+  margin-top: 40px;
   max-width: var(--page-width-default);
   height: 415px;
 }
@@ -43,4 +44,16 @@
 
 .buttonRight {
   right: 23px;
+}
+
+.pictureStep {
+  position: absolute;
+  left: 50%;
+  bottom: 24px;
+  transform: translateX(-50%);
+  z-index: 130;
+  color: #FFF;
+  font-family: var(--font-default);
+  font-size: 18px;
+  font-weight: 500;
 }

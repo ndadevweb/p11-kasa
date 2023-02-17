@@ -1,9 +1,7 @@
-import { useRouteError, NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import classes from './ErrorPage.module.css'
 
 export default function ErrorPage() {
-  const error = useRouteError()
-
   return (
     <div className={ classes.content }>
       <h1 className={ classes.statusCode }>404</h1>

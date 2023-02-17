@@ -29,6 +29,10 @@ export default function Slideshow({ pictures }) {
     setPictureIndexActive(newIndex)
   }
 
+  function getPictureNumber(index) {
+    return index + 1
+  }
+
   return (
     <aside className={ classes.slideshow } data-has-many-images={ PICTURES_TOTAL > 1 }>
       {
@@ -43,6 +47,8 @@ export default function Slideshow({ pictures }) {
           />)
         })
       }
+
+      <span className={ classes.pictureStep }>{ `${ getPictureNumber(pictureIndexActive) +'/'+ PICTURES_TOTAL}` }</span>
 
       <button type="button" className={ classes.buttonLeft } data-direction={ DIRECTION_LEFT } onClick={ handleChangePicture }>
         <img src={ arrowLeft } alt="Left" />
