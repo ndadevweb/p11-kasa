@@ -50,6 +50,7 @@
 @media screen and (max-width: 600px) {
   .headerImage {
     margin-bottom: 22px;
+    border-radius: 10px;
   }
 
   .headerImage.mobileSmall {

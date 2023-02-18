@@ -9,6 +9,7 @@
   display: flex;
   align-items: flex-end;
   width: 100px;
+  flex: 1 1;
   text-align: right;
   color: var(--color-one);
   font-family: var(--font-default);
@@ -24,4 +25,17 @@
   height: var(--size);
   border-radius: var(--size);
   background: var(--color-picture);
+}
+
+@media screen and (max-width: 600px) {
+  .fullName {
+    font-size: 12px;
+  }
+
+  .picture {
+    --size: 32px;
+    width: var(--size);
+    height: var(--size);
+    border-radius: var(--size);
+  }
 }

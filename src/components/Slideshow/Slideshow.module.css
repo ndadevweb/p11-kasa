@@ -57,3 +57,19 @@
   font-size: 18px;
   font-weight: 500;
 }
+
+@media screen and (max-width: 600px) {
+  .slideshow {
+    height: 255px;
+    border-radius: 10px;
+  }
+
+  .slideshow button.buttonLeft img,
+  .slideshow button.buttonRight img {
+    height: 24px;
+  }
+
+  .pictureStep {
+    display: none;
+  }
+}

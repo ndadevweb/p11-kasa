@@ -26,7 +26,7 @@ export default function LodgementPage() {
 
           <section className={ classes.informations }>
             <header className={ classes.header }>
-              <h2 className={ classes.mainTitle }>{ lodgement.title }</h2>
+              <h2 className={ classes.lodgementTitle }>{ lodgement.title }</h2>
               <h3 className={ classes.locationTitle }>{ lodgement.location }</h3>
             </header>
 
@@ -35,7 +35,9 @@ export default function LodgementPage() {
               <Rating rating={ lodgement.rating } />
             </aside>
 
-            <Tags tags={ lodgement.tags } />
+            <div className={ classes.tags }>
+              <Tags tags={ lodgement.tags } />
+            </div>
 
             <div className={ classes.details }>
               <div>
