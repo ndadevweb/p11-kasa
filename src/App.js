@@ -1,14 +1,14 @@
 import { Outlet } from 'react-router-dom';
-import './App.css'
 import { Header, Navigation, Logo, Footer } from './components'
 import { TYPE } from './components/Logo/Logo'
+import './App.css'
 
 function App() {
   return (
     <>
       <div className="container">
         <Header>
-          <Logo type={ TYPE.primary } />
+          <Logo type={ TYPE.primary } responsiveClass={ true } />
           <Navigation />
         </Header>
         <main>

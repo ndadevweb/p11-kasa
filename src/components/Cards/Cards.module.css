@@ -1,7 +1,7 @@
 .cards {
   display: grid;
-  grid-template-columns: repeat(3, 340px);
-  justify-content: space-between;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: start;
   grid-gap: 50px;
   max-width: 1240px;
   min-height: 10vh;
@@ -9,4 +9,25 @@
   padding: 56px 50px;
   background: #F6F6F6;
   border-radius: 25px;
+}
+
+@media screen and (max-width: 1280px) {
+  .cards {
+    padding: 28px 25px;
+    grid-gap: 25px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .cards {
+    grid-template-columns: 1fr;
+    padding: 0;
+    background: transparent;
+  }
 }

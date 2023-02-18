@@ -18,3 +18,9 @@
   font-weight: 500;
   font-size: 24px;
 }
+
+@media screen and (max-width: 600px) {
+  .mainFooter p {
+    font-size: 12px;
+  }
+}
