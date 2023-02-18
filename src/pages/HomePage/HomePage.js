@@ -16,7 +16,7 @@ export default function HomePage() {
 
   return (
     <>
-      <HeaderImage image={ image } alternativeText="Mountain and ocean" title={ title } />
+      <HeaderImage image={ image } alternativeText="Mountain and ocean" title={ title } customClasses={ ['mobileSmall'] } />
       { isLoading ===  true
         ? <Loading isLoading={ isLoading } />
         : <Cards lodgements={ lodgements } />

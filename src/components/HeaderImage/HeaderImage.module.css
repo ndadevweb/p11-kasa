@@ -49,8 +49,11 @@
 
 @media screen and (max-width: 600px) {
   .headerImage {
-    height: 111px;
     margin-bottom: 22px;
+  }
+
+  .headerImage.mobileSmall {
+    height: 111px;
   }
 
   .headerImage h3 {

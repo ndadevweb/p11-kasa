@@ -32,7 +32,7 @@
   }
 
   .navigationPrimary li:not(:first-child) a {
-    margin-left: 10px;
+    margin-left: 20px;
   }
 }
 
