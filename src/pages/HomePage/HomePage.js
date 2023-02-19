@@ -3,6 +3,13 @@ import image from '../../assets/images/mountain-and-ocean.png'
 import { useFetchLodgements } from '../../hooks/useFetchLodgement'
 import { HeaderImage, Loading, Cards } from '../../components'
 
+/**
+ * HomePage component
+ *
+ * @component
+ *
+ * @returns (<HomePage>)
+ */
 export default function HomePage() {
   const [lodgements, isLoading] = useFetchLodgements()
 
@@ -21,7 +28,6 @@ export default function HomePage() {
         ? <Loading isLoading={ isLoading } />
         : <Cards lodgements={ lodgements } />
       }
-
     </>
   )
 }

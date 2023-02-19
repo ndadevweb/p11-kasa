@@ -2,6 +2,13 @@ import { useEffect } from 'react'
 import { NavLink } from 'react-router-dom'
 import classes from './ErrorPage.module.css'
 
+/**
+ * ErrorPage component
+ *
+ * @component
+ *
+ * @returns (<ErrorPage>)
+ */
 export default function ErrorPage() {
   useEffect(() => {
     document.title = 'Erreur 404'

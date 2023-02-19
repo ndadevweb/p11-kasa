@@ -1,6 +1,13 @@
 import classes from './Navigation.module.css'
 import { NavLink, useMatch } from 'react-router-dom'
 
+/**
+ * Compoent for display the main navigation
+ *
+ * @component
+ *
+ * @returns (<Navigation />)
+ */
 export default function Navigation() {
   return (
     <nav className={ classes.navigationPrimary }>

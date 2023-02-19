@@ -1,6 +1,15 @@
 import Tag from './Tag/Tag'
 import classes from './Tags.module.css'
 
+/**
+ * Component for display a list of Tag component
+ *
+ * @component
+ *
+ * @param {Object} param
+ * @param {Array[String]}
+ * @returns (<Tags name={ tag } />)
+ */
 export default function Tags({ tags }) {
 
   return (

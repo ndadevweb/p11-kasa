@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import { useParams, Navigate } from 'react-router-dom'
 import { useFindLodgement } from '../../hooks/useFindLodgement'
-import { Slideshow, Host, Rating, Tags, Dropdown } from '../../components'
+import { Slideshow, Host, Rating, Tags, Dropdown, Loading } from '../../components'
 import {
   STATUS as DropdownStatus,
   OPTION_STYLE as DropdownOptionStyle
@@ -20,7 +20,7 @@ export default function LodgementPage() {
   return (
     error !== null
       ? <Navigate to="/error" replace="true" />
-      : isLoading === true ? 'Loading'
+      : isLoading === true ? <Loading />
       : (<>
           <Slideshow pictures={ lodgement.pictures } />
 

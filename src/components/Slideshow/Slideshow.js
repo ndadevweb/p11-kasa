@@ -3,6 +3,15 @@ import arrowLeft from '../../assets/icons/arrow-left.svg'
 import arrowRight from '../../assets/icons/arrow-right.svg'
 import classes from './Slideshow.module.css'
 
+/**
+ * Component to display a slideshow with many images
+ *
+ * @component
+ *
+ * @param {Object} param
+ * @param {Array} pictures
+ * @returns (<Slideshow pictures={ pictures } />)
+ */
 export default function Slideshow({ pictures }) {
   const [pictureIndexActive, setPictureIndexActive] = useState(0)
 
@@ -12,6 +21,11 @@ export default function Slideshow({ pictures }) {
   const DIRECTION_LEFT = 'left'
   const DIRECTION_RIGHT = 'right'
 
+  /**
+   * handle click to change image
+   *
+   * @param {MouseEvent} event
+   */
   function handleChangePicture(event) {
     const { direction } = event.currentTarget.dataset
     let newIndex = 0
@@ -29,6 +43,12 @@ export default function Slideshow({ pictures }) {
     setPictureIndexActive(newIndex)
   }
 
+  /**
+   * Returns image number
+   *
+   * @param {Integer} index
+   * @returns {Integer}
+   */
   function getPictureNumber(index) {
     return index + 1
   }
@@ -51,11 +71,11 @@ export default function Slideshow({ pictures }) {
       <span className={ classes.pictureStep }>{ `${ getPictureNumber(pictureIndexActive) +'/'+ PICTURES_TOTAL}` }</span>
 
       <button type="button" className={ classes.buttonLeft } data-direction={ DIRECTION_LEFT } onClick={ handleChangePicture }>
-        <img src={ arrowLeft } alt="Left" />
+        <img src={ arrowLeft } alt="Left >" />
       </button>
 
       <button type="button" className={ classes.buttonRight } data-direction={ DIRECTION_RIGHT } onClick={ handleChangePicture }>
-        <img src={ arrowRight } alt="Right" />
+        <img src={ arrowRight } alt="< Right" />
       </button>
     </aside>
   )

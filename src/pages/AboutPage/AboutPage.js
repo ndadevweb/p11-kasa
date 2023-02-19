@@ -7,7 +7,13 @@ import {
   OPTION_STYLE as DropdownOptionStyle
 } from '../../components/Dropdown/Dropdown'
 
-
+/**
+ * AboutPage component
+ *
+ * @component
+ *
+ * @returns (<AboutPage>)
+ */
 export default function AboutPage() {
   const dropdownInformations = [
     { status: DropdownStatus.close, title: "Fiabilité", content: "Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes." },
@@ -22,6 +28,12 @@ export default function AboutPage() {
     document.title = 'A propos'
   }, [])
 
+  /**
+   * Build list of dropdown components
+   *
+   * @param {Array[Object]} informations
+   * @returns {Array[<Dropdown />]}
+   */
   function dropdowns(informations) {
     return informations.map((information, index) =>
       <Dropdown

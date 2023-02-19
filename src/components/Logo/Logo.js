@@ -1,10 +1,29 @@
 import classes from './Logo.module.css'
 
+/**
+ * Define options of the logo
+ *
+ * @typedef PropertiesTYPE
+ * @type {Object}
+ * @property [String} primary
+ * @property [String} secondary
+ */
 const TYPE = {
   primary: 'primary',
   secondary: 'secondary'
 }
 
+/**
+ * Component for display the logo
+ * It is possible to change the color with TYPE constant
+ *
+ * @component
+ *
+ * @param {Object} param
+ * @param {String} (primary|secondary) param.type
+ * @param {Boolean} (true|false) param.responsiveClass
+ * @returns (<Logo type={ type } responsiveClass={ responsiveClass })
+ */
 function Logo({ type, responsiveClass }) {
   let svgConfig = {
     primary: { width: 211, fill: '#FF6060' },
