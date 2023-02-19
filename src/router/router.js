@@ -27,4 +27,4 @@ export const router = createBrowserRouter([
       }
     ]
   }
-])
+], { basename: '/p11-kasa' })

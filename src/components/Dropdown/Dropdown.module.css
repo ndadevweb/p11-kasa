@@ -7,9 +7,7 @@
   height: 100%;
 }
 
-.dropdown.close {
-  height: 0%;
-}
+.dropdown.close {}
 
 .title {
   display: flex;
