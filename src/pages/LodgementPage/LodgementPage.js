@@ -21,7 +21,8 @@ export default function LodgementPage() {
     error !== null
       ? <Navigate to="/error" replace="true" />
       : isLoading === true ? <Loading />
-      : (<>
+      : (
+        <>
           <Slideshow pictures={ lodgement.pictures } />
 
           <section className={ classes.informations }>
@@ -40,18 +41,16 @@ export default function LodgementPage() {
             </div>
 
             <div className={ classes.details }>
-              <div>
-                <Dropdown title={ 'Description' } defaultStatus={ DropdownStatus.open } optionStyle={ optionStyle }>
-                  <p>{ lodgement.description }</p>
-                </Dropdown>
-              </div>
+              <Dropdown title={ 'Description' } defaultStatus={ DropdownStatus.open } optionStyle={ optionStyle }>
+                <p>{ lodgement.description }</p>
+              </Dropdown>
 
-              <div>
-                <Dropdown title={ 'Équipements' } defaultStatus={ DropdownStatus.open }>
-                  <ul>{ lodgement.equipments.map((equipment, index) => (<li key={ index }>{ equipment }</li>)) }</ul>
-                </Dropdown></div>
-              </div>
+              <Dropdown title={ 'Équipements' } defaultStatus={ DropdownStatus.open }>
+                <ul>{ lodgement.equipments.map((equipment, index) => (<li key={ index }>{ equipment }</li>)) }</ul>
+              </Dropdown>
+            </div>
           </section>
-        </>)
+        </>
+    )
   )
 }
