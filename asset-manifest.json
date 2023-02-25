@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/p11-kasa/static/css/main.96b4e4c3.css",
+    "main.css": "/p11-kasa/static/css/main.38643824.css",
     "main.js": "/p11-kasa/static/js/main.36062e95.js",
     "static/js/787.0ce615c0.chunk.js": "/p11-kasa/static/js/787.0ce615c0.chunk.js",
     "static/media/mountains.png": "/p11-kasa/static/media/mountains.02e1c4f7498de1cb845b.png",
@@ -11,12 +11,12 @@
     "static/media/arrow-top.svg": "/p11-kasa/static/media/arrow-top.b493ffa8d213273ee575457aae023b70.svg",
     "static/media/arrow-right.svg": "/p11-kasa/static/media/arrow-right.88153a5d119c2744ffe34dca1ef843df.svg",
     "static/media/arrow-left.svg": "/p11-kasa/static/media/arrow-left.19918a1634b1441a25ae0b50e6b1f85b.svg",
-    "main.96b4e4c3.css.map": "/p11-kasa/static/css/main.96b4e4c3.css.map",
+    "main.38643824.css.map": "/p11-kasa/static/css/main.38643824.css.map",
     "main.36062e95.js.map": "/p11-kasa/static/js/main.36062e95.js.map",
     "787.0ce615c0.chunk.js.map": "/p11-kasa/static/js/787.0ce615c0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.96b4e4c3.css",
+    "static/css/main.38643824.css",
     "static/js/main.36062e95.js"
   ]
 }
