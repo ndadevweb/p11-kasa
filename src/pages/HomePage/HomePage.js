@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import image from '../../assets/images/mountain-and-ocean.png'
+import image from '../../assets/images/mountain-and-ocean.jpg'
 import { useFetchLodgements } from '../../hooks/useFetchLodgement'
 import { HeaderImage, Loading, Cards } from '../../components'
 

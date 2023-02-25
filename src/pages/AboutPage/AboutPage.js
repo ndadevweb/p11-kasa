@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import image from '../../assets/images/mountains.png'
+import image from '../../assets/images/mountains.jpg'
 import classes from './AboutPage.module.css'
 import { Dropdown, HeaderImage } from '../../components/'
 import {
