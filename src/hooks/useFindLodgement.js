@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { URL_FIND_LODGEMENT } from '../config'
+import { URL_FIND_LODGEMENT } from '../configs/config'
 
 /**
  * Hook to find a lodgement by id

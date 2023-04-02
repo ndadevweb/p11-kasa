@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { URL_FETCH_LODGEMENTS } from '../config'
+import { URL_FETCH_LODGEMENTS } from '../configs/config'
 
 /**
  * Hook to fetch all lodgements
