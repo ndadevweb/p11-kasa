@@ -1,17 +1,22 @@
 import classes from './Header.module.css'
+import { Logo, TYPE } from '../Logo/Logo'
+import { NavLink } from 'react-router-dom'
+import Navigation from '../Navigation/Navigation'
 
 /**
  * Component for display a Header page
  *
  * @component
  *
- * @param {children} children
- * @returns (<Header>{ children }</Header>)
+ * @returns (<Header />)
  */
-export default function Header({ children }) {
+export default function Header() {
   return (
     <header className={ classes.headerPrimary }>
-      { children }
+      <NavLink to="/">
+        <Logo type={ TYPE.primary } responsiveClass={ true } />
+      </NavLink>
+      <Navigation />
     </header>
   )
 }

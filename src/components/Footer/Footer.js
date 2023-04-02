@@ -1,18 +1,18 @@
-import React from "react"
+import React from 'react'
 import classes from './Footer.module.css'
+import { Logo, TYPE } from '../Logo/Logo'
 
 /**
  * Component for display a page footer
  *
  * @component
  *
- * @param {children} children
- * @returns (<Footer>{ children }</Footer>)
+ * @returns (<Footer />)
  */
-export default function Footer({ children }) {
+export default function Footer() {
   return (
     <footer className={ classes.mainFooter }>
-      { children }
+      <Logo type={ TYPE.secondary } />
       <p>© 2020 Kasa. All rights reserved</p>
     </footer>
   )
